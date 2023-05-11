@@ -1,0 +1,13 @@
+.page-container {
+    display: flex;
+    flex-direction:row ;
+  }
+  
+  .number-bar {
+    background-color:#1c1c1c;
+  }
+  
+  .content {
+    flex-grow: 1;
+  }
+  

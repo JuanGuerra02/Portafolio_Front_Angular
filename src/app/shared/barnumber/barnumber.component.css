@@ -1,0 +1,13 @@
+.number-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .number {
+    color: rgb(144, 144, 144);
+    padding: 8px;
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+  

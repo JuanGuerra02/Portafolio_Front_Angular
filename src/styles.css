@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+.navbar-nav {
+    flex-direction: row;
+  }
+  
+  .navbar-nav li {
+    margin-right: 10px;
+  }
+  
+  @media (max-width: 767px) {
+    .navbar-nav {
+      flex-direction: column;
+    }
+  
+    .navbar-nav li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+
+  @font-face {
+    font-family: 'PublicPixel-eZPz6';
+    src: url('./assets/fonts/PublicPixel-eZPz6.ttf') format('truetype');
+  }
+  
+  body {
+    font-family: 'PublicPixel-eZPz6', sans-serif;
+  }
