@@ -1,0 +1,50 @@
+.menu {
+    padding-top: 60px;
+    text-align: center;
+    color:aliceblue ;
+  }
+  
+  .centered-text {
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  .code-animation {
+    font-size: 50px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 25em;
+    position: relative;
+  }
+  
+  .bracket {
+    color: yellow;
+  }
+  
+  .text {
+    color: white;
+  }
+  
+  .bar-animation {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: white;
+    animation: expand-bar 1s linear infinite;
+  }
+  
+  @keyframes expand-bar {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 100%;
+    }
+    100% {
+      width: 0;
+    }
+  }
+  
