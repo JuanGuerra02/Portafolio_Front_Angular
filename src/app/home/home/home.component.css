@@ -1,12 +1,26 @@
 .menu {
-    padding-top: 60px;
     text-align: center;
     color:aliceblue ;
   }
   
   .centered-text {
+    padding-top: 100px;
     text-align: center;
     font-size: 20px;
+    padding-bottom: 60px;
+  }
+  
+  .vertical-cointainer {
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+   }
+
+  .vertical-text {
+  writing-mode: vertical-rl;
+  text-align: center;
   }
   
   .code-animation {
@@ -47,4 +61,13 @@
       width: 0;
     }
   }
+
+.background-image {
+  background-image: url('../../../assets/img/52594-programacion.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment:inherit ;
+  height: 300px;
+}
+  
   

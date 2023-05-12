@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -70,4 +70,17 @@ deletePhrase() {
     }
   }, this.deletingSpeed);
 }
+
+
+@HostListener('window:scroll', ['$event'])
+  onScroll(event: any) {
+    const scrollTop = event.target.documentElement.scrollTop;
+    const backgroundElement = document.querySelector('.background-image') as HTMLElement;
+    backgroundElement.style.backgroundPositionY = `-${scrollTop}px`;
+
+    if (scrollTop === 0) {
+      return;
+    }
+  }
+  
 }
