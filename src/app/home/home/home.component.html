@@ -1,14 +1,89 @@
 <div class="menu">
-    <h1 class="centered-text">//Hola, mi nombre es Juan Guerra y soy...</h1>
-    <div class="code-animation">
-      <span class="bracket">{{'{'}}</span>
-      <span class="text">{{ animatedText }}</span>
-      <span class="bracket">{{'}'}}</span>
-      <span class="bar-animation"></span>
-    </div>
-    <div class="vertical-cointainer">
-      <p class="vertical-text"> ==></p>
-    </div>
-    <div class="background-image"></div>
+  <h2 class="centered-text">//Hola, mi nombre es Juan Guerra y soy...</h2>
+  <div class="code-animation">
+    <span class="bracket">{{'{'}}</span>
+    <span class="text">{{ animatedText }}</span>
+    <span class="bracket">{{'}'}}</span>
+    <span class="bar-animation"></span>
   </div>
-  
+
+  <div class="vertical-container">
+    <p class="vertical-text"> ==></p>
+  </div>
+
+  <div class="background-image"></div>
+
+  <h1 class="titulo">{{'<'}} PERFIL {{'>'}} </h1>
+  <p class="parrafoP">"...Transformando ideas en realidad digital que sorprenden y cautivan a los usuarios,
+    impulsando el éxito de nuestros clientes en el mundo digital a través del código."</p>
+
+  <div class="row">
+    <div class="col">
+      <p class="column-text">...Cuento con 1 año de experiencia en el desarrollo web, y un proceso de desarrollo activo tanto en front-end como back-end </p>
+    </div>
+    <div class="col">
+      <p class="column-text">Soy una persona altamente motivada y comprometida, con diversas 
+        habilidades en el ambiente de desarrollo, cuento con una excelente 
+        habilidad interpersonal y capacidad de adaptación a diferentes 
+        entornos laborales y de aprendizaje</p>
+    </div>
+  </div>
+
+  <button class="button" routerLink="/perfil" >{{'<'}}Ver Perfil{{'>'}}</button>
+
+  <div class="vertical-container">
+    <p class="vertical-text"> ==></p>
+  </div>
+
+  <h1 class="titulo">{{'<'}} PROYECTOS {{'>'}} </h1>
+
+  <div class="project-container">
+    <div class="project-box">
+      <h3>Proyecto 1</h3>
+      <p>Descripción del proyecto 1</p>
+      <button>Ver detalles</button>
+    </div>
+    <div class="project-box">
+      <h3>Proyecto 2</h3>
+      <p>Descripción del proyecto 2</p>
+      <button>Ver detalles</button>
+    </div>
+    <div class="project-box">
+      <h3>Proyecto 3</h3>
+      <p>Descripción del proyecto 3</p>
+      <button>Ver detalles</button>
+    </div>
+  </div>
+
+  <button class="button"  routerLink="/proyectos">{{'<'}}Ver Proyectos{{'>'}}</button>
+
+  <div class="vertical-container">
+    <p class="vertical-text"> ==></p>
+  </div>
+
+  <h1 class="titulo">{{'<'}} HOBBIES {{'>'}} </h1>
+  <button class="button" routerLink="/hobbies">{{'<'}}Ver Hobbies{{'>'}}</button>
+
+  <div class="vertical-container">
+    <p class="vertical-text"> ==></p>
+  </div>
+
+  <div class="contact-form">
+    <h2>Contacto</h2>
+    <form>
+      <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+      <div class="form-group">
+        <label for="asunto">Asunto:</label>
+        <input type="text" id="asunto" name="asunto" required>
+      </div>
+      <div class="form-group">
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+      </div>
+      <button type="submit">En Proceso...</button>
+    </form>
+  </div>
+</div>
