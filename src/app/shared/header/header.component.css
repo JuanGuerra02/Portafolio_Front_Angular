@@ -3,13 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    font-family: 'VT323-Regular', sans-serif;                 
-}
+
 
 header {
   width: 100%;
-  
   background-size: cover;
   background-position: center;
   
@@ -20,10 +17,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 25px;
-    transition: all 0.7s ease;
+    padding: 15px;
+    transition: all 0.5s ease;
     background-color: #1c1c1c;
-    box-shadow: 0px 3px 3px rgba(147, 147, 147, 0.2); 
 }
 
 .logo{
@@ -38,7 +34,8 @@ header {
 
 .menu li{
     list-style: none;
-    margin: 10px;
+    margin: 5px 10px 5px 10px;
+ 
 }
 
 .menu li a{
@@ -60,32 +57,32 @@ header {
 .fixed .nav {
     position: fixed;
     top: 0;
-    left: 0;
     width: 100%;
-    background-color: #8b8989; 
-    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2); 
-    z-index: 999; /* Ajusta el valor de z-index según tus necesidades */
+    background-color: #1c1c1c; 
+    z-index: 1;
 } 
  
 .fixed .nav .logo {
-    font-size: 15px;
-    color: black;
-    font-weight: 100%;
+  font-size: 15px;
+  color: #ffffff;
+  font-weight: 100%;
 }
 
 .fixed .nav .menu li a{
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.7s ease;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight:lighter ;
+  font-size: 12px;
+  transition: all 0.7s ease;
 }
 
 .fixed .nav .menu li a:hover{
-    padding: 5px 10px;
-    background: rgb(0, 0, 0);
-    color: #ffffff;
-    border-radius: 15px;
+  padding: 5px 10px;
+  background: aliceblue;
+  color: #000;
+  border-radius: 15px;
 }
+
 @media (max-width: 800px) {
     .nav {
       flex-direction: column;

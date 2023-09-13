@@ -1,86 +1,42 @@
-<div class="menu">
+<div class="container-all">
     <div class="code-animation">
-        <span class="bracket">{{'{'}}</span>
+        <span class="bracket">{{'{"'}}</span>
         <span class="text">{{ animatedText }}</span>
-        <span class="bracket">{{'}'}}</span>
+        <span class="bracket">{{'"}'}}</span>
         <span class="bar-animation"></span>
     </div>
-    <div class="vertical-container">
-      <p class="vertical-text"> ==></p>
+
+    <div class="profile-container">
+      <div class="img-profile">
+        <img src="../../assets/img/Foto-DSC_1337.PNG.png" alt="">
+      </div>
+
+      <div class="info-profile">
+        <h2>JUAN SEBASTIAN GUERRA ALVAREZ</h2>
+        <h5>Ingeniero en Sistemas</h5>
+        <div class="icon-container">
+          <div class="icon fa fa-whatsapp" (click)="showInfo(1)"></div>
+          <div class="icon fa fa-envelope" (click)="showInfo(2)"></div>
+          <div class="icon fa fa-linkedin" (click)="showInfo(3)"></div>
+        </div>
     </div>
 
-    <div >
-      <h1 class="titulo">{{'<'}} DATOS PERSONALES {{'>'}} </h1>
-    
-      <table class="tabla-datos">
-        <tr>
-          <td class="td1">Nombre:</td>
-          <td class="td2">Juan Sebastian Guerra Alvarez</td>
-        </tr>
-        <tr>
-          <td class="td1">Edad:</td>
-          <td class="td2">23</td>
-        </tr>
-        <tr>
-          <td class="td1">Profesión:</td>
-          <td class="td2">Ingeniero en sistemas</td>
-        </tr>
-        <tr>
-          <td class="td1">Cargo:</td>
-          <td class="td2">Desarrollador Web</td>
-        </tr>
-        <tr>
-          <td class="td1">Residencia:</td>
-          <td class="td2">Planeta Rica / Cordoba / Colombiana</td>
-        </tr>
-        <tr>
-          <td class="td1">Sexo:</td>
-          <td class="td2">Masculino</td>
-        </tr>
-        
-      </table>
-      
-      <div class="vertical-container">
-        <p class="vertical-text"> ==></p>
+    <div class="popup-container">
+      <div class="popup" *ngIf="isPopupVisible[0]">
+        <p class="p">+57 {{ whatsappText }}</p>
+        <button (click)="copyToClipboard(whatsappText)">Copiar</button>
+        <button (click)="closePopup(1)">Cerrar</button>
       </div>
-      
-      <div>
-      <h1 class="titulo">{{'<'}} FORMACION ACADEMICA {{'>'}} </h1>
-
-      <table class="tabla-datos">
-        <tr>
-          <td class="td1">Bachiller:</td>
-          <td class="td2">Institucion educativa Alfonso builes correa </td>
-          <td class="td3">2016</td>
-        </tr>
-        <tr>
-          <td class="td1">Tecnico:</td>
-          <td class="td2">Instituto de enseñanza y capacitacion de la costa</td>
-          <td class="td3">2016</td>
-        </tr>
-        <tr>
-          <td class="td1">Profesional:</td>
-          <td class="td2">Universidad Cooperativa de CoLOMBIA</td>
-          <td class="td3">2022</td>
-        </tr>
-      </table>
+      <div class="popup" *ngIf="isPopupVisible[1]">
+        <p class="p">{{ gmail }}</p>
+        <button (click)="copyToClipboard(gmail)">Copiar</button>
+        <button (click)="closePopup(2)">Cerrar</button>
       </div>
-
-      <div class="vertical-container">
-        <p class="vertical-text"> ==></p>
-      </div>
-
-      <div class="row">
-        <div class="col">
-          <div class="column-wrapper">
-            <p class="column-text">...Cuento con 1 año de experiencia en el desarrollo web, y un proceso de desarrollo activo tanto en front-end como back-end </p>
-          </div>
-        </div>
-        <div class="col">
-          <div class="column-wrapper">
-            <p class="column-text">Soy una persona altamente motivada y comprometida, con diversas habilidades en el ambiente de desarrollo, cuento con una excelente habilidad interpersonal y capacidad de adaptación a diferentes entornos laborales y de aprendizaje</p>
-          </div>
-        </div>
+      <div class="popup" *ngIf="isPopupVisible[2]">
+        <p class="p">Juan Sebastian Guerra</p>
+        <button (click)="openLinkedInProfile()"><span>Ir a LinkedIn</span></button>
+        <button (click)="closePopup(3)">Cerrar</button>
       </div>
     </div>
-    
+    <br>
+</div>

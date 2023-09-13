@@ -10,13 +10,13 @@ export class HomeComponent implements OnInit {
   animatedText: string = '';
   currentIndex: number = 0;
   currentPhrase: string = '';
-  typingSpeed: number = 150; // Velocidad de escritura en milisegundos
-  deletingSpeed: number = 100; // Velocidad de borrado en milisegundos
-  pauseBetweenPhrases: number = 500; // Pausa entre frases en milisegundos
+  typingSpeed: number = 150; 
+  deletingSpeed: number = 100; 
+  pauseBetweenPhrases: number = 500; 
 
   phrases: string[] = [
-    '"Desarrollador web"',
-    '"Full Stack"'
+    'Desarrollador web',
+    'Full Stack'
   ];
 
   constructor() { }
