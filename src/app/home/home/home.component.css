@@ -4,7 +4,19 @@
 }
 
 .p{
-  margin-top: 100px;
+  margin-top: 20px;
+}
+
+.h4{
+  margin-top: 110px;
+  color: #eaea14;
+  
+}
+
+.h2{
+  color: #eaea14;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .code-animation {
@@ -81,3 +93,18 @@ button:hover::before, button:hover::after {
 button:hover {
   box-shadow: inset 0px 0px 25px #eaea14;
 }
+
+.icon-list {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.icon-list img {
+  max-width: 50px; 
+  margin: 10px 20px; 
+
+}
+
