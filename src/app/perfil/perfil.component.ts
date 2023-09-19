@@ -70,30 +70,5 @@ export class PerfilComponent {
     }, this.deletingSpeed);
   }
 
-  isPopupVisible: boolean[] = [false, false, false]; 
   
-  showInfo(index: number){
-    this.isPopupVisible[index - 1] = true;
-  }
-
-  closePopup(index: number){
-    this.isPopupVisible[index - 1] = false;
-  }
-
-  whatsappText: string = "3023285467";
-  gmail: string = "juansebastian2014.jsga@gmail.com"
-
-  copyToClipboard(text: string) {
-    const textArea = document.createElement("textarea");
-    textArea.value = text;
-    document.body.appendChild(textArea);
-    textArea.select();
-    document.execCommand("copy");
-    document.body.removeChild(textArea);
-  }
-
-  openLinkedInProfile() {
-    const linkedinProfileUrl = "https://www.linkedin.com/in/juan-sebastian-guerra-6b927b238/";
-    window.open(linkedinProfileUrl, "_blank");
-  }
 }

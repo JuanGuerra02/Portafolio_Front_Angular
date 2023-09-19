@@ -1,11 +1,11 @@
 <div class="container-all">
-    <div class="code-animation">
-        <span class="bracket">{{'{"'}}</span>
-        <span class="text">{{ animatedText }}</span>
-        <span class="bracket">{{'"}'}}</span>
-        <span class="bar-animation"></span>
-    </div>
-
+  <div class="code-animation">
+    <span class="bracket">{{'{"'}}</span>
+    <span class="text">{{ animatedText }}</span>
+    <span class="bracket">{{'"}'}}</span>
+    <span class="bar-animation"></span>
+  </div>
+  <div class="container-hv">
     <div class="profile-container">
       <div class="img-profile">
         <img src="../../assets/img/Foto-DSC_1337.PNG.png" alt="">
@@ -15,28 +15,111 @@
         <h2>JUAN SEBASTIAN GUERRA ALVAREZ</h2>
         <h5>Ingeniero en Sistemas</h5>
         <div class="icon-container">
-          <div class="icon fa fa-whatsapp" (click)="showInfo(1)"></div>
-          <div class="icon fa fa-envelope" (click)="showInfo(2)"></div>
-          <div class="icon fa fa-linkedin" (click)="showInfo(3)"></div>
+          <a class="a" href="https://api.whatsapp.com/send?phone=3023285467&text=Hola%20Juan,%20Vengo%20desde%20tu%20portafolio%20y%20me%20gustaría%20contactar%20con%20usted,%20Saludos!"
+            target="_blank">
+            <div class="icon fa fa-whatsapp"></div>
+          </a>
+          <a class="a" href="mailto:juansebastian2014.jsga@gmail.com" target="_blank">
+            <div class="icon fa fa-envelope"></div>
+          </a>
+          <a class="a" href="https://www.linkedin.com/in/juan-guerra-6b927b238/" target="_blank">
+            <div class="icon fa fa-linkedin"></div>
+          </a>          
         </div>
-    </div>
+      </div>
 
-    <div class="popup-container">
-      <div class="popup" *ngIf="isPopupVisible[0]">
-        <p class="p">+57 {{ whatsappText }}</p>
-        <button (click)="copyToClipboard(whatsappText)">Copiar</button>
-        <button (click)="closePopup(1)">Cerrar</button>
+    </div>
+    <div class="container-body">
+      <div class="container-left">
+        <h5> Perfil Profesional </h5>
+        <span class="span">------------</span>
+        <p>Soy una persona altamente motivada y comprometida, con diversas habilidades en el
+          ambiente de desarrollo, cuento con una excelente habilidad interpersonal y capacidad de
+          adaptación a diferentes entornos laborales y de aprendizaje.</p>
+
+        <h5> Habilidaes </h5>
+        <span class="span">------------</span>
+        <li> Desarrollo de software</li>
+        <li> Habilidades interpersonales</li>
+        <li> Trabajo individual y grupal</li>
+        <li> Manejod e bases de datos</li>
+
+        <h5> Habilidaes </h5>
+        <span class="span">------------</span>
+        <h6>Laboral</h6>
+        <li> Marlon Miranda ING. Sistemas / 3173202747 / Montería</li>
+        <h6>Personal</h6>
+        <li> Anyi Montes ADM. Finanzas / 3145269174 / Planeta Rica</li>
+
+        <h5>Contacto</h5>
+        <span class="span">------------</span>
+        <div class="icon-list">
+          <div class="icon">
+            <a href="mailto:juansebastian2014.jsga@gmail.com" target="_blank">
+              <img src="../../../assets/logos/gmail.png" alt="Gmail">
+              <span>Gmail</span>
+            </a>
+          </div>
+          <div class="icon">
+            <a href="https://www.linkedin.com/in/juan-guerra-6b927b238/" target="_blank">
+              <img src="../../../assets/logos/linkedin.png" alt="LinkedIn">
+              <span>LinkedIn</span>
+            </a>
+          </div>
+          <div class="icon">
+            <a href="https://api.whatsapp.com/send?phone=3023285467&text=Hola%20Juan,%20Vengo%20desde%20tu%20portafolio%20y%20me%20gustaría%20contactar%20con%20usted,%20Saludos!"
+              target="_blank">
+              <img src="../../../assets/logos/whatsapp.png" alt="WhatsApp">
+              <span>WhatsApp</span>
+            </a>
+          </div>
+        </div>
+        <br>
+        <p><strong>RESIDENCIA: </strong>Planeta Rica, Cordoba, Colombia</p>
       </div>
-      <div class="popup" *ngIf="isPopupVisible[1]">
-        <p class="p">{{ gmail }}</p>
-        <button (click)="copyToClipboard(gmail)">Copiar</button>
-        <button (click)="closePopup(2)">Cerrar</button>
-      </div>
-      <div class="popup" *ngIf="isPopupVisible[2]">
-        <p class="p">Juan Sebastian Guerra</p>
-        <button (click)="openLinkedInProfile()"><span>Ir a LinkedIn</span></button>
-        <button (click)="closePopup(3)">Cerrar</button>
+
+      <div class="container-rigth">
+        <h5> Educacion </h5>
+        <span class="span">------------</span>
+        <li> Técnico en Sistemas, Año 2014 - 2015</li>
+        <li> Ingeniero en Sistemas, Año 2016 - 2022</li>
+
+        <h5> Idiomas </h5>
+        <span class="span">------------</span>
+        <li> Español: Nativo</li>
+        <li> Ingles: A2</li>
+
+        <h5> Conocimientos </h5>
+        <span class="span">------------</span>
+        <li> Bases de datos: MySQL, SQL Server, PostgreSQL</li>
+        <li> Lenguajes: Java (Spring Boot), PHP (Laravel), Typescript (Angular), Python</li>
+        <li> Frameworks: Laravel, Angular</li>
+        <li> Entornos de Desarrollo (IDEs): IntelliJ IDEA, NetBeans, Visual Studio</li>
+        <li> Repositorios: GitHub</li>
+        <li>Metodologías: Metodología Ágil (Scrum)</li>
+
+        <h5> Experiencia Laboral </h5>
+        <span class="span">------------</span>
+        <div class="experiencia-container">
+          <div class="experiencia">
+            <p><strong>EMPRESA:</strong> Cerro Matoso S.A.S | South32</p>
+            <p><strong>CARGO:</strong> Practicante</p>
+            <p><strong>JEFE INMEDIATO:</strong> Carlos Poveda</p>
+            <p><strong>CEL:</strong> 3173312381</p>
+            <p><strong>PERIODO:</strong> 02-Ago-2021 / 03-Feb-2022</p>
+          </div>
+          <div class="experiencia">
+            <p><strong>EMPRESA:</strong> Audihealth</p>
+            <p><strong>CARGO:</strong> Desarrollador</p>
+            <p><strong>JEFE INMEDIATO:</strong> Marlon Miranda</p>
+            <p><strong>CEL:</strong> 3173202747</p>
+            <p><strong>PERIODO:</strong> 15-Jul-2022 / 15-Ene-2023</p>
+          </div>
+        </div>
       </div>
     </div>
-    <br>
+    <button>
+    <a class="a" href="https://drive.google.com/file/d/1fzYHEZh0DkWcqs24U2DUmGbURSR2LxMj/view?usp=sharing" download target="_blank">Descargar PDF</a>
+    </button>
+  </div>
 </div>
